@@ -1,0 +1,47 @@
+    <div class="header">
+      <div class="container">
+        <h1>Kopi Luwak</h1>
+        <p>The secret of DELICIOUS coffee</p>
+        <a class="btn" href="#">Learn More</a>
+      </div>
+    </div>
+
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li>Home</li>
+          <li><%= link_to "Farming Luwaks", history_path %></li> 
+          <li>Coffee</li>
+          <li>Comment</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+        <img src="http://www.sciencebuzz.org/sites/default/files/images/800px-Palmenroller-drawing.jpg" >
+        <h2>The Best Cat Poop Coffee (Kopi Luwak)</h2>
+        <p> Officially known at Kopi Luwak, is a possibly the world’s most unique coffee </p>
+        <p>While also being the world’s most expensive coffee, cat poop coffee (kopi luwak) has the craziest, if not the strangest production and manufacturing process around, thus giving it a one of a kind flavor.</p>
+        <p>The coffee bean is literally picked out of the poop of the cat (an asian civet) that eats the coffee berries. ...</p>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h2>Stay Connected</h2>
+        <p>More information...</p>
+        
+        <%= form_for(@signup) do |signup| %>
+        <%= signup.text_field:email, :placeholder => "Email" %>
+        <%= signup.submit "Create" %>
+      </div>
+      <% end %>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p>&copy; Kopi Luwak International</p>
+      </div>
+    </div>
