@@ -3,6 +3,12 @@ Rails.application.routes.draw do
   root 'signups#new'
 
   get '/history' => 'pages#history'
+  get '/coffee' => 'pages#coffee'
+
+  get '/messages' => 'messages#index'
+  get '/messages/new' => 'messages#new'
+  post 'messages' => 'messages#create'
+  
   resources :signups
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

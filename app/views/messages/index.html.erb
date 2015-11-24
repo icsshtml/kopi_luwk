@@ -1,0 +1,45 @@
+<style>
+
+.message{
+	
+	padding: 5px;
+	background: lightgrey;
+	margin-top: 10px;
+}
+
+</style>
+<div class="header">
+      <div class="container">
+        <h1>Kopi Luwak</h1>
+        <p>The secret of DELICIOUS coffee</p>
+        <a class="btn" href="#">Learn More</a>
+      </div>
+    </div>
+
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Farming Luwaks", history_path %></li> 
+          <li><%= link_to "Coffee", coffee_path %></li>
+          <li><%= link_to "Comment", messages_path %></li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+<% @messages.each do |message| %> 
+<div class="message"> 
+  <p class="content"><%= message.content %></p> 
+  <p class="time"><%= message.created_at %></p> 
+</div> 
+<% end %>
+<div class="but">
+<%= link_to 'New Message', "messages/new" %></div>
+
+ <div class="footer">
+      <div class="container">
+        <p>&copy; Kopi Luwak International</p>
+      </div>
+ </div>
