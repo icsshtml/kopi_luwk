@@ -1,0 +1,62 @@
+
+
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+
+<div class="header">
+      <div class="container">
+        <h1>Kopi Luwak</h1>
+        <p>The secret of DELICIOUS coffee</p>
+        <a class="btn" href="#">Learn More</a>
+      </div>
+    </div>
+
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Farming Luwaks", history_path %></li> 
+          <li><%= link_to "Coffee", coffee_path %></li>
+           <li><%= link_to "Comment", messages_path %></li>
+          <li><%= link_to "Contact", contact_path %></li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> San Francisco, California</p>
+      <p><span class="glyphicon glyphicon-phone"></span>(415) 451-9812</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>jon@kopiluka.com</p> 
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>

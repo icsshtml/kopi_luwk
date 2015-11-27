@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get '/history' => 'pages#history'
   get '/coffee' => 'pages#coffee'
+  get '/contact' => 'pages#contact'
 
   get '/messages' => 'messages#index'
   get '/messages/new' => 'messages#new'
